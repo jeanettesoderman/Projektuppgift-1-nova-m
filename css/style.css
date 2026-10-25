@@ -17,13 +17,14 @@ h2,
 h3 {
   font-family: "Montserrat", sans-serif;
 }
+
+/* Grundstyling för alla textparagrafer*/
 p {
   color: #d0d3d8;
-}
-p {
   margin-top: 0;
 }
 
+/* Tar bort den vanliga understrykningen från länkarna och låter dem ärva textfärg */
 a {
   color: inherit;
   text-decoration: none;
@@ -35,22 +36,25 @@ header {
   padding: 20px 40px;
 }
 
+/* Flexbox ser till att logotypen och menyn ligger bredvid varandra */
 header nav {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-between; /* Skjuter logotypen åt vänster och menyn åt höger */
+  align-items: center; /* Centrerar innehållet vertikalt */
 }
 
+/* Style för den länken som ligger direkt i nav, alltså logotyptexten */
 header nav > a {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 18px;
 }
 
-/* Styling för navigationen*/
+/* Styling för navigationen, gör så den hamnar på en rad*/
 header nav ul {
   display: flex;
-  gap: 30px;
+  list-style: none; /* Tar bort listans punkter */
+  gap: 30px; /* Avstånd mellan menyvalen */
   margin: 0;
   padding: 0;
 }
@@ -67,16 +71,20 @@ header nav a:hover {
 
 /* Styling för Hero*/
 .hero {
+  /* Gemensam hero som används på flera sidor */
   min-height: 510px;
+
+  /* Lägger ett mörkt lager ovanpå bakgrundsbilden för bättre läsbarhet */
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
     url("../images/Hero.png");
-  background-size: cover;
-  background-position: center 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+
+  background-size: cover; /* bilden täcker hela hero-sektionen */
+  background-position: center 50%; /* Bestämmer vilken del av bakgrundsbilden som ska ligga i centrum */
+  display: flex; /* används för att placera innehållet lodrätt */
+  flex-direction: column; /* Lägger innehållet i en lodrät kolumn */
+  justify-content: flex-start; /* Gör så att rubrik, text och knapp börjar högre upp */
+  align-items: center; /* Centrerar innehållet vågrätt */
   text-align: center;
   padding: 70px 20px 40px;
 }
@@ -85,7 +93,9 @@ header nav a:hover {
 .hero h1 {
   font-size: 48px;
   margin-bottom: 70px;
-  transform: translateY(-30px);
+  transform: translateY(
+    -30px
+  ); /* Flyttar rubriken uppåt utan att nåt annat flyttas */
 }
 
 /* Styling för herotexten*/
@@ -106,8 +116,8 @@ header nav a:hover {
 /* Styling för Introduction*/
 .introduction {
   text-align: center;
-  max-width: 900px;
-  margin: 0 auto;
+  max-width: 900px; /* Begränsar textens bredd så att raderna inte blir för långa */
+  margin: 0 auto; /* auto på sidorna centrerar sektionen */
   padding: 50px 20px 80px;
 }
 
@@ -115,23 +125,24 @@ header nav a:hover {
 .introduction h2 {
   font-size: 36px;
   margin-bottom: 25px;
-  transform: translateY(-30px);
+  transform: translateY(-30px); /* Flyttar rubriken lite uppåt */
 }
 
 .introduction p {
   font-size: 18px;
-  line-height: 1.7;
+  line-height: 1.7; /* Ökar radavståndet för bättre läsbarhet */
 }
 
 /* Styling för Featured Work sektionen */
 .featured-work {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  display: grid; /*används för att placera bild och text i två kolumner */
+  grid-template-columns: 1fr 1fr; /* Skapar två lika breda kolumner */
+  gap: 60px; /* Avstånd mellan kolumner och rader */
   align-items: center;
   padding: 80px 40px;
 }
 
+/* Rubriken ligger över båda grid-kolumnerna */
 .featured-work h2 {
   grid-column: 1 / -1;
   text-align: center;
@@ -140,26 +151,31 @@ header nav a:hover {
   color: #42d7e8;
 }
 
+/* Bilden i Featured Work */
 .featured-work img {
   width: 100%;
-  max-width: 520px;
-  justify-self: center;
+  max-width: 520px; /* ser till att inte bilden blir för stor på breda skärmar */
+  justify-self: center; /* Centrerar bilden i sin grid-kolumn */
 }
 
+/* Begränsar bredden på textdelen */
 .featured-work > div {
   max-width: 500px;
 }
 
+/* Ökar radavståndet i texten */
 .featured-work p {
   line-height: 1.6;
 }
 
+/* Centrerar textinnehållet i högra kolumnen */
 .featured-work-text {
   text-align: center;
 }
 
+/* YouTube-knappen */
 .featured-work-text a {
-  display: inline-block;
+  display: inline-block; /* stylar som en knapp */
 
   background-color: #42d7e8;
   color: #0d1117;
@@ -175,25 +191,32 @@ header nav a:hover {
   text-align: center;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url("../images/SERVICES-\ sektion.png");
-  background-size: cover;
+    url("../images/SERVICES-\ sektion.png"); /* Mörkt lager över bakgrundsbilden gör texten tydligare */
+  background-size: cover; /* bakgrundsbilden fyller sektionen */
   background-position: center;
 }
 
+/* Rubriken Services */
 .services h2 {
   font-size: 36px;
   color: #42d7e8;
   margin-bottom: 50px;
 }
 
+/* Kort för de olika tjänsterna */
 .service-card {
-  display: inline-block;
-  vertical-align: top;
+  display: inline-block; /* placerar flera kort på samma rad */
+  vertical-align: top; /* korten linjeras från toppen */
   width: 28%;
-  min-width: 240px;
+  min-width: 240px; /* gör så att korten inte blir för smala */
   margin: 0 12px;
   padding: 30px 24px;
-  background-color: rgba(17, 21, 28, 0.9);
+  background-color: rgba(
+    17,
+    21,
+    28,
+    0.9
+  ); /* Halvtransparent bakgrund gör att bakgrundsbilden syns svagt igenom */
   border: 1px solid #42d7e8;
   border-radius: 8px;
 }
@@ -208,6 +231,7 @@ header nav a:hover {
   margin-bottom: 24px;
 }
 
+/* Learn More-knappar */
 .service-card a {
   display: inline-block;
   background-color: #42d7e8;
@@ -229,11 +253,14 @@ header nav a:hover {
   margin-bottom: 50px;
 }
 
+/* Wrapper som håller processstegen på samma rad */
 .process-container {
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Centrerar de tre stegen */
   gap: 0px;
 }
+
+/* Varje steg får lika stor del av utrymmet */
 .process-step {
   flex: 1;
   padding: 20px;
@@ -284,6 +311,7 @@ footer {
   padding: 40px 20px;
 }
 
+/* Styling för studions namn högst upp i footern */
 footer > p:first-child {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -292,11 +320,12 @@ footer > p:first-child {
   margin-bottom: 20px;
 }
 
+/* footer-navigationen hamnar på en rad */
 footer nav ul {
   display: flex;
   justify-content: center;
   gap: 25px;
-  list-style: none;
+  list-style: none; /* Tar bort listans punkter */
   margin: 0 0 20px;
   padding: 0;
 }
@@ -305,10 +334,12 @@ footer nav a {
   color: #ffffff;
 }
 
+/* ändrar fär vid hovring */
 footer nav a:hover {
   color: #42d7e8;
 }
 
+/* länkarna hamnar brevid varandra */
 .social-links {
   display: flex;
   justify-content: center;
@@ -318,4 +349,65 @@ footer nav a:hover {
 
 footer p {
   font-size: 14px;
+}
+
+.service-details {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 70px 40px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 80px; /* Avstånd mellan bild och text */
+}
+
+.service-details h2 {
+  width: 100%;
+  font-size: 34px;
+  color: #42d7e8;
+  margin-bottom: 25px;
+}
+
+.service-details p {
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 480px;
+}
+
+.service-details img {
+  width: 42%;
+  max-width: 460px;
+  height: auto;
+  border: 1px solid #42d7e8;
+}
+
+/* Background Music på Services sidan */
+.background-music {
+  min-height: 520px;
+  padding: 70px 40px 120px;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/SERVICES- sektion.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+.background-music h2 {
+  font-size: 34px;
+  color: #42d7e8;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.background-music p {
+  max-width: 650px;
+  font-size: 18px;
+  line-height: 1.7;
 }
