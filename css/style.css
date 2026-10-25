@@ -411,3 +411,57 @@ footer p {
   font-size: 18px;
   line-height: 1.7;
 }
+
+/* FAQ */
+.faq {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 70px 20px;
+}
+
+/* rubrik */
+.faq h2 {
+  text-align: center;
+  font-size: 34px;
+  color: #42d7e8;
+  margin-bottom: 40px;
+}
+
+/* Varje fråga med tillhörande svar */
+.faq-item {
+  border-bottom: 1px solid #3a3f46;
+  padding: 20px 0;
+}
+
+/* Själva frågan */
+.faq-item button {
+  width: 100%;
+
+  /* Gör så att frågan kan ligga till vänster och plustecknet till höger senare */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  text-align: left;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Svaret under frågan */
+.faq-item p {
+  margin-top: 15px;
+  margin-bottom: 0;
+  line-height: 1.6;
+  color: #d0d3d8;
+}
+
+/* Plustecknet i FAQ */
+.faq-icon {
+  font-size: 24px;
+  color: #42d7e8;
+}
