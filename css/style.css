@@ -168,3 +168,51 @@ header nav a:hover {
   font-weight: 600;
   margin-top: 10px;
 }
+
+/* Styling för Services*/
+.services {
+  padding: 80px 20px;
+  text-align: center;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("../images/SERVICES-\ sektion.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.services h2 {
+  font-size: 36px;
+  color: #42d7e8;
+  margin-bottom: 50px;
+}
+
+.service-card {
+  display: inline-block;
+  vertical-align: top;
+  width: 28%;
+  min-width: 240px;
+  margin: 0 12px;
+  padding: 30px 24px;
+  background-color: rgba(17, 21, 28, 0.9);
+  border: 1px solid #42d7e8;
+  border-radius: 8px;
+}
+
+.service-card h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.service-card a {
+  display: inline-block;
+  background-color: #42d7e8;
+  color: #0d1117;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: 600;
+}
