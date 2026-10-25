@@ -466,3 +466,53 @@ footer p {
   font-size: 24px;
   color: #42d7e8;
 }
+
+/* About sidan */
+.about-studio {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 70px 40px; /* luft ovanför, under och på sidorna */
+  display: flex; /* bild och text hamnar bredvid varandra */
+  flex-wrap: wrap; /* innehållet kan flyttas ner om det inte får plats */
+  justify-content: center;
+  gap: 70px;
+}
+
+/* About Nova M Music Studio */
+.about-studio {
+  max-width: 1100px; /* Begränsar hur bred sektionen får bli */
+  margin: 0 auto; /* Centrerar sektionen på sidan */
+  padding: 70px 40px; /* Ger luft runt innehållet */
+
+  display: grid; /* Delar upp sektionen i kolumner */
+  grid-template-columns: 1fr 1fr; /* Skapar två lika breda delar */
+  align-items: center; /* Centrerar bild och text i höjdled */
+  gap: 70px; /* Mellanrum mellan profilbilden och texten */
+}
+
+/* Rubriken ska ligga över hela sektionen */
+.about-studio h2 {
+  grid-column: 1 / -1; /* Gör att rubriken går över båda kolumnerna */
+  text-align: center;
+  font-size: 34px;
+  color: #42d7e8;
+  margin-bottom: 25px;
+}
+
+/* Profilbilden */
+.about-studio img {
+  width: 100%;
+  max-width: 380px; /* gör så att profilbilden inte blir för stor */
+  height: auto; /* Behåller bildens proportioner */
+  border-radius: 8px;
+  border: 3px solid #42d7e8;
+  justify-self: center; /* Centrerar bilden till vänster */
+}
+
+/* Texten bredvid profilbilden */
+.about-studio p {
+  max-width: 500px; /* Håller texten på en lagom bredd */
+  font-size: 18px;
+  line-height: 1.7; /* Ger mer mellanrum mellan raderna */
+  justify-self: center; /* Centrerar text till höger */
+}
