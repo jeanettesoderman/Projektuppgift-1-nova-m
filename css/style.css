@@ -216,3 +216,36 @@ header nav a:hover {
   border-radius: 6px;
   font-weight: 600;
 }
+
+.how-it-works {
+  padding: 50px 40px;
+  text-align: center;
+}
+
+.how-it-works h2 {
+  font-size: 36px;
+  color: #42d7e8;
+  margin-bottom: 50px;
+}
+
+.process-container {
+  display: flex;
+  justify-content: center;
+  gap: 0px;
+}
+.process-step {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.process-step h3 {
+  color: #42d7e8;
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+
+.process-step p {
+  font-size: 18px;
+  line-height: 1.6;
+}
