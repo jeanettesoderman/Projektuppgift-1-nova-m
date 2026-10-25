@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700&display=swap");
 
+/* Grundstyling för hela sidan*/
 * {
   box-sizing: border-box;
 }
@@ -28,6 +29,7 @@ a {
   text-decoration: none;
 }
 
+/* Styling för header + navigation*/
 header {
   background-color: #11151c;
   padding: 20px 40px;
@@ -45,6 +47,7 @@ header nav > a {
   font-size: 18px;
 }
 
+/* Styling för navigationen*/
 header nav ul {
   display: flex;
   gap: 30px;
@@ -52,14 +55,17 @@ header nav ul {
   padding: 0;
 }
 
+/* Styling för länkarna i navigationen*/
 header nav a {
   color: #ffffff;
 }
 
+/* Styling vid hovring över länkarna i navigationen*/
 header nav a:hover {
   color: #42d7e8;
 }
 
+/* Styling för Hero*/
 .hero {
   min-height: 510px;
   background-image:
@@ -74,17 +80,21 @@ header nav a:hover {
   text-align: center;
   padding: 70px 20px 40px;
 }
+
+/* Styling för hero rubriken*/
 .hero h1 {
   font-size: 48px;
   margin-bottom: 70px;
   transform: translateY(-30px);
 }
+
+/* Styling för herotexten*/
 .hero p {
   font-size: 20px;
 
   margin-bottom: 120px;
 }
-
+/* Styling för knappen i hero*/
 .hero a {
   background-color: #42d7e8;
   color: #0d1117;
@@ -93,6 +103,7 @@ header nav a:hover {
   font-weight: 600;
 }
 
+/* Styling för Introduction*/
 .introduction {
   text-align: center;
   max-width: 900px;
@@ -100,6 +111,7 @@ header nav a:hover {
   padding: 50px 20px 80px;
 }
 
+/* Styling för rubriken i introduction*/
 .introduction h2 {
   font-size: 36px;
   margin-bottom: 25px;
@@ -111,6 +123,7 @@ header nav a:hover {
   line-height: 1.7;
 }
 
+/* Styling för Featured Work sektionen */
 .featured-work {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -132,6 +145,7 @@ header nav a:hover {
   max-width: 520px;
   justify-self: center;
 }
+
 .featured-work > div {
   max-width: 500px;
 }
