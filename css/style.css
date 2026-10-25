@@ -59,3 +59,36 @@ header nav a {
 header nav a:hover {
   color: #42d7e8;
 }
+
+.hero {
+  min-height: 510px;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url("../images/Hero.png");
+  background-size: cover;
+  background-position: center 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  padding: 70px 20px 40px;
+}
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 70px;
+  transform: translateY(-30px);
+}
+.hero p {
+  font-size: 20px;
+
+  margin-bottom: 120px;
+}
+
+.hero a {
+  background-color: #42d7e8;
+  color: #0d1117;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+}
