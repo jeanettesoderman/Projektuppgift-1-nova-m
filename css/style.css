@@ -673,3 +673,44 @@ footer p {
 .contact-form button:hover {
   background-color: #35bfd0;
 }
+
+/* Hamburgermenyn döljs på större skärmar */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Anpassningar för mindre skärmar */
+@media (max-width: 768px) {
+  header {
+    padding: 16px 20px;
+  }
+
+  header nav {
+    flex-direction: row; /* Behåller studions namn och hamburgermenyn på samma rad */
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Gör att menyn hamnar på raden under när den öppnas */
+  }
+
+  .menu-toggle {
+    display: block; /* Visar hamburgermenyn på mindre skärmar */
+  }
+
+  .nav-links {
+    display: none; /* Döljer menyvalen tills hamburgermenyn klickas på */
+    width: 100%;
+    flex-direction: column; /* Lägger menyvalen under varandra */
+    align-items: flex-end; /* Lägger menyvalen till höger */
+    gap: 12px;
+    padding-top: 15px;
+  }
+  /* Gör menyvalen synliga när hamburgermenyn öppnas*/
+  .nav-links.open {
+    display: flex;
+  }
+}
