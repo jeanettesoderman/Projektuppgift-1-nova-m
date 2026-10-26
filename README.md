@@ -37,5 +37,5 @@ Wireframes och mockups skapades innan webbplatsen byggdes och finns sparade i ma
 
 ## Länkar
 
-- Publicerad webbplats:
-- GitHub-repo:
+- Publicerad webbplats: https://jeanettesoderman.github.io/Projektuppgift-1-nova-m/
+- GitHub-repo: https://github.com/jeanettesoderman/Projektuppgift-1-nova-m
