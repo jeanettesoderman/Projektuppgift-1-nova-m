@@ -517,6 +517,7 @@ footer p {
   justify-self: center; /* Centrerar text till höger */
 }
 
+/* Creative approach delen */
 .creative-approach {
   max-width: 1100px;
   margin: 0 auto;
@@ -547,4 +548,128 @@ footer p {
   max-width: 460px;
   height: auto;
   border: 1px solid #42d7e8;
+}
+
+/* Contact-sidan */
+.contact {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 70px 40px; /* luft ovanför, under och på sidorna */
+  text-align: center;
+}
+
+/* Rubriken Get in Touch */
+.contact h2 {
+  font-size: 34px;
+  color: #42d7e8;
+  margin-bottom: 20px;
+}
+
+/* Introduktionstexten */
+.contact > p {
+  max-width: 700px; /* Gör så att texten inte blir för bred */
+  margin: 0 auto 50px; /* Centrerar texten och ger luft under */
+  font-size: 18px;
+  line-height: 1.7;
+}
+/* Lägger kontaktuppgifter och formulär bredvid varandra */
+.contact-container {
+  max-width: 1100px; /* Begränsar hur bred hela kontaktområdet får bli */
+  margin: 0 auto; /* Centrerar området på sidan */
+  padding: 0 40px 70px;
+
+  display: grid; /* Gör så det blir två kolumner */
+  grid-template-columns: 1fr 1.4fr; /* Ger formuläret lite mer plats än kontaktuppgifterna */
+  gap: 50px; /* Mellanrummet mellan de två kolumnerna */
+  align-items: start;
+}
+
+/* Rutan med kontaktuppgifter */
+.contact-details {
+  border: 1px solid #42d7e8;
+  border-radius: 8px;
+  padding: 30px;
+  min-height: 320px;
+}
+
+.contact-details h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.contact-details p {
+  line-height: 1.8;
+}
+
+.contact-details ul {
+  list-style: none; /* Tar bort punktlistan framför sociala medier */
+  padding: 0;
+  margin: 0;
+}
+
+.contact-details a {
+  color: #d0d3d8;
+}
+
+.contact-details a:hover {
+  color: #42d7e8;
+}
+/* Rutan med kontaktformuläret */
+.contact-form {
+  border: 1px solid #42d7e8; /* Turkos ram runt formuläret */
+  padding: 30px; /* Luft inne i rutan */
+  border-radius: 8px;
+}
+
+.contact-form h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+/* Lägger formulärdelarna under varandra */
+.contact-form form {
+  display: flex;
+  flex-direction: column; /* Gör att fälten hamnar lodrätt */
+  gap: 15px; /* Mellanrum mellan fälten */
+  border-radius: 8px;
+}
+
+/* Fälten i kontaktformuläret */
+.contact-form input,
+.contact-form textarea {
+  width: 100%; /* Gör att fälten fyller hela formulärets bredd */
+  padding: 14px 16px; /* Gör fälten högre och ger mer luft runt texten */
+  background-color: #1a1f27;
+  border: 1px solid #38414a;
+  border-radius: 6px;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+}
+
+/* Gör meddelanderutan högre än de vanliga fälten */
+.contact-form textarea {
+  min-height: 150px;
+  resize: vertical; /* Gör att användaren kan dra rutan högre om inte texten får plats */
+}
+
+/* Knappen som skickar formuläret */
+.contact-form button {
+  align-self: center; /* Gör att knappen centreras*/
+  background-color: #42d7e8;
+  color: #0d1117;
+  padding: 12px 24px; /* Ger knappen lite mer höjd och bredd */
+  border: none; /* Tar bort webbläsarens vanliga knappkant */
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer; /* Visar en hand när man håller musen över knappen */
+}
+
+/* Ändrar knappens färg lite när man håller musen över den */
+.contact-form button:hover {
+  background-color: #35bfd0;
 }
