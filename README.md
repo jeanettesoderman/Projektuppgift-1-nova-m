@@ -37,5 +37,5 @@ Wireframes och mockups skapades innan webbplatsen byggdes och finns sparade i ma
 
 ## Länkar
 
-- Publicerad webbplats: 
-- GitHub-repo: 
+- Publicerad webbplats:
+- GitHub-repo:
