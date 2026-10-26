@@ -468,18 +468,7 @@ footer p {
   color: #42d7e8;
 }
 
-/* About sidan */
-.about-studio {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 70px 40px; /* luft ovanför, under och på sidorna */
-  display: flex; /* bild och text hamnar bredvid varandra */
-  flex-wrap: wrap; /* innehållet kan flyttas ner om det inte får plats */
-  justify-content: center;
-  gap: 70px;
-}
-
-/* About Nova M Music Studio */
+/* About sidan Nova M Music Studio */
 .about-studio {
   max-width: 1100px; /* Begränsar hur bred sektionen får bli */
   margin: 0 auto; /* Centrerar sektionen på sidan */
