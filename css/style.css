@@ -207,8 +207,9 @@ header nav a:hover {
 .service-card {
   display: inline-block; /* placerar flera kort på samma rad */
   vertical-align: top; /* korten linjeras från toppen */
-  width: 28%;
-  min-width: 240px; /* gör så att korten inte blir för smala */
+  width: 280px; /* Ger korten en jämnare bredd */
+  max-width: 100%; /* Gör att korten fortfarande får plats på mindre skärmar */
+  min-height: 290px; /* Håller korten mer lika i höjd */
   margin: 0 12px;
   padding: 30px 24px;
   background-color: rgba(
@@ -684,6 +685,16 @@ footer p {
   cursor: pointer;
 }
 
+/* Anpassar tjänstekorten på mellanstora skärmar */
+@media (max-width: 900px) {
+  .service-card {
+    display: block; /* Lägger korten under varandra när skärmen blir för smal */
+    width: 100%;
+    max-width: 420px; /* Hindrar korten från att bli för breda */
+    margin: 0 auto 20px; /* Centrerar korten och ger mellanrum mellan dem */
+  }
+}
+
 /* Anpassningar för mindre skärmar */
 @media (max-width: 768px) {
   header {
@@ -712,5 +723,277 @@ footer p {
   /* Gör menyvalen synliga när hamburgermenyn öppnas*/
   .nav-links.open {
     display: flex;
+  }
+
+  /* Mobilanpassning för hero */
+  .hero {
+    min-height: 420px; /* Gör hero-sektionen lite lägre på mobil */
+    padding: 50px 20px 30px;
+    background-position: center;
+  }
+
+  .hero h1 {
+    font-size: 34px; /* Minskar rubriken så den får plats bättre */
+    margin-bottom: 35px;
+    transform: none; /* Tar bort flytten av rubriken uppåt som används på desktop */
+  }
+
+  .hero p {
+    font-size: 17px;
+    margin-bottom: 50px;
+    max-width: 320px; /* Gör texten smalare på mobil */
+  }
+
+  .hero a {
+    padding: 12px 20px;
+  }
+
+  /* Mobilanpassning för Introduction */
+  .introduction {
+    padding: 40px 20px 50px; /* Minskar luft jämfört med desktop */
+  }
+
+  .introduction h2 {
+    font-size: 28px; /* Gör rubriken mindre på mobil */
+    transform: none; /* Tar bort flytten av rubriken uppåt som används på desktop */
+  }
+
+  .introduction p {
+    font-size: 16px;
+  }
+
+  /* Mobilanpassning för Featured Work */
+  .featured-work {
+    grid-template-columns: 1fr; /* Lägger bild och text under varandra */
+    gap: 30px;
+    padding: 50px 20px;
+  }
+
+  .featured-work h2 {
+    font-size: 28px;
+    grid-column: auto; /* Rubriken behöver inte längre gå över två kolumner */
+  }
+
+  .featured-work img {
+    width: 100%;
+    max-width: 420px; /* Hindrar bilden från att bli för stor */
+  }
+
+  .featured-work-text {
+    max-width: 420px;
+    justify-self: center; /* Centrerar textblocket */
+  }
+
+  /* Mobilanpassning för Services */
+  .services {
+    padding: 50px 20px;
+  }
+
+  .services h2 {
+    font-size: 28px;
+  }
+
+  /* Lägger tjänstekorten under varandra på mobil */
+  .service-card {
+    display: block;
+    width: 100%;
+    max-width: 360px; /* Hindrar korten från att bli för breda */
+    margin: 0 auto 20px; /* Centrerar korten och ger mellanrum mellan dem */
+  }
+
+  /* Mobilanpassning för How It Works */
+  .how-it-works {
+    padding: 50px 20px;
+  }
+
+  .how-it-works h2 {
+    font-size: 28px;
+  }
+
+  /* Lägger de tre stegen under varandra på mobil */
+  .process-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .process-step {
+    padding: 15px 10px;
+  }
+
+  /* Mobilanpassning för CTA */
+  .cta {
+    padding: 50px 20px;
+  }
+
+  .cta h2 {
+    font-size: 28px;
+  }
+
+  .cta p {
+    font-size: 16px;
+  }
+
+  /* Mobilanpassning för footer */
+  footer {
+    padding: 30px 20px;
+  }
+
+  /* Lägger footer-menyn under varandra på mobil */
+  footer nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Lägger sociala länkar under varandra */
+  .social-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Mobilanpassning för de detaljerade tjänsterna */
+  .service-details {
+    padding: 50px 20px;
+    gap: 30px; /* Minskar mellanrummet mellan bild och text */
+  }
+
+  /* Lägger bild och text under varandra på mobil */
+  .service-details {
+    flex-direction: column;
+  }
+
+  .service-details h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .service-details img {
+    width: 100%;
+    max-width: 420px; /* Hindrar bilden från att bli för stor */
+  }
+
+  .service-details p {
+    max-width: 420px;
+    font-size: 16px;
+  }
+
+  /* Mobilanpassning för Background Music */
+  .background-music {
+    min-height: 420px;
+    padding: 50px 20px 70px;
+  }
+
+  .background-music h2 {
+    font-size: 28px;
+    margin-top: 10px;
+  }
+
+  .background-music p {
+    font-size: 16px;
+    max-width: 420px;
+  }
+
+  /* Mobilanpassning för FAQ */
+  .faq {
+    padding: 50px 20px;
+  }
+
+  .faq h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .faq-item button {
+    font-size: 16px;
+    gap: 20px; /* Ger lite luft mellan frågan och plus/minustecknet */
+  }
+
+  .faq-item p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  /* Mobilanpassning för About Nova M Music Studio */
+  .about-studio {
+    grid-template-columns: 1fr; /* Lägger profilbild och text under varandra */
+    gap: 30px;
+    padding: 50px 20px;
+  }
+
+  .about-studio h2 {
+    font-size: 28px;
+    grid-column: auto; /* Rubriken behöver inte längre gå över två kolumner */
+  }
+
+  .about-studio img {
+    width: 100%;
+    max-width: 320px; /* Hindrar profilbilden från att bli för stor */
+  }
+
+  .about-studio p {
+    max-width: 420px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  /* Mobilanpassning för Creative Approach */
+  .creative-approach {
+    grid-template-columns: 1fr; /* Lägger studiobild och text under varandra */
+    gap: 30px;
+    padding: 50px 20px;
+  }
+
+  .creative-approach h2 {
+    font-size: 28px;
+    grid-column: auto;
+  }
+
+  .creative-approach img {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .creative-approach p {
+    max-width: 420px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  /* Mobilanpassning för Contact-sidan */
+  .contact {
+    padding: 50px 20px;
+  }
+
+  .contact h2 {
+    font-size: 28px;
+  }
+
+  .contact > p {
+    font-size: 16px;
+    margin-bottom: 35px;
+  }
+
+  /* Lägger kontaktuppgifter och formulär under varandra */
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 30px; /* Ger mellanrum mellan kontaktuppgifter och formulär */
+    padding: 0 20px 50px;
+  }
+
+  /* Gör båda rutorna lagom breda på mobil */
+  .contact-details,
+  .contact-form {
+    width: 100%;
+  }
+
+  /* Anpassar formulärfälten för mindre skärm */
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 16px;
+    padding: 12px 14px;
+  }
+
+  /* Gör knappen lagom stor och centrerad */
+  .contact-form button {
+    align-self: center;
   }
 }
