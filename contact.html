@@ -64,8 +64,13 @@
 
             <!-- Contact Form -->
             <section class="contact-form">
+                <!-- Rubrik för formulärdelen -->
                 <h2>Send a Message</h2>
-                <form>
+
+                <!--Kontaktformuläret.novalidate stänger av
+                    webbläsarens egen validering så att valideringen i stället
+                     kan hanteras med JavaScript.-->
+                <form novalidate>
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name">
 
@@ -76,8 +81,13 @@
                     <input type="text" id="subject" name="subject">
 
                     <label for="message">Message</label>
+
+                    <!--textarea används eftersom meddelandet kan bestå av flera rader
+                    och behöver mer utrymme än ett vanligt inputfält.-->
                     <textarea id="message" name="message"></textarea>
 
+                    <!--type="submit" gör att knappen försöker skicka formuläret.
+                    JavaScript fångar submit-händelsen och validerar fälten först.-->
                     <button type="submit">Send Message</button>
                 </form>
             </section>
@@ -105,6 +115,7 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
 
 </body>
 
