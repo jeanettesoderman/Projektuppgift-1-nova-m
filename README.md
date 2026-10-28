@@ -35,6 +35,8 @@ Jag har arbetat med responsiv design, Flexbox, CSS Grid, validering av formulär
 
 Wireframes och mockups skapades innan webbplatsen byggdes och finns sparade i mappen `design`.
 
+Bildmaterialet på webbplatsen består av (tidigare av mig) AI-genererade bilder.
+
 ## Länkar
 
 - Publicerad webbplats: https://jeanettesoderman.github.io/Projektuppgift-1-nova-m/
