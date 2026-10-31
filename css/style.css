@@ -499,12 +499,17 @@ footer p {
   justify-self: center; /* Centrerar bilden till vänster */
 }
 
-/* Texten bredvid profilbilden */
-.about-studio p {
-  max-width: 500px; /* Håller texten på en lagom bredd */
-  font-size: 18px;
-  line-height: 1.7; /* Ger mer mellanrum mellan raderna */
-  justify-self: center; /* Centrerar text till höger */
+/* Textblocket bredvid profilbilden */
+.about-text {
+  max-width: 500px; /* Håller hela textblocket på en lagom bredd */
+  justify-self: center; /* Centrerar textblocket i högra grid-kolumnen */
+}
+
+/* Styckena inne i textblocket */
+.about-text p {
+  font-size: 18px; /* Anger textstorleken */
+  line-height: 1.7; /* Ger mer mellanrum mellan textraderna */
+  margin-bottom: 20px; /* Skapar mellanrum mellan de två styckena */
 }
 
 /* Creative approach delen */
